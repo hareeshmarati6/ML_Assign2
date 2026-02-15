@@ -78,7 +78,7 @@ if uploaded:
 
     model_path = MODELS_DIR / MODEL_FILES[model_name]
     if not model_path.exists():
-        st.error(f"Model file not found: {model_path}. Please run train_models.py first and commit models/ to repo.")
+        st.error(f"Model file not found: {model_path}. Please run models.py first and commit models/ to repo.")
         st.stop()
 
     model = load_model(model_path)
